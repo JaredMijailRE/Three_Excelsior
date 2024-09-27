@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXCELLSIOR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/base/base.css') }}" type="text/css">
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.5.0"></script>
+    <!-- threejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    
+    <div class="barra-navegacion">
+        <div class="imagen">
+            <img src="{{ url_for('static', filename='img/blackLogo.png') }}" alt="logo excelsior">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a id="myButton0">Inicio</a></li>
+                <li><a id="myButton">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    
+    <canvas id="bg"></canvas>
+    {% block content %}
+
+    {% endblock %}    
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>

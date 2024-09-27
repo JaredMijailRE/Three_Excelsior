@@ -1,0 +1,13 @@
+Este es el ciclo de vida para crear nuestra aplicacion
+
+Recoleccion de requisitos:
+
+Analisis:
+
+Diseño:
+
+Code and test:
+
+User test:
+
+Produccion:
